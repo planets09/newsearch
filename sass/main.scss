@@ -51,11 +51,11 @@ input.form-control{
 	}
 }
 
-iframe{
-	display: none;
+textarea.form-control{
+	display: none !important;
 }
 
-li:hover iframe{
+li:hover textarea.form-control{
 	display: initial;
 	height: 200px;
 	width: 500px;

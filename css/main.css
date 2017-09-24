@@ -37,11 +37,11 @@ input.form-control {
     padding: 25px;
     margin-top: 25px; }
 
-iframe {
-  display: none; }
+textarea {
+  display: none!important; }
 
-li:hover iframe {
-  display: initial;
+li:hover textarea {
+  display: block!important;
   height: 200px;
   width: 500px;
   overflow: scroll; }

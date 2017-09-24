@@ -58,7 +58,6 @@
 <!-- ng-disabled: can disable the button until there is a value input. Or, use ng-disabled='myValue.length < 3' for the button to recognize you have to type at least 3 letters to input value. -->
 <div id='search-box'>
 	<input class='form-control' type="text" ng-model='myValue' />
-
 	<button ng-disabled='!myValue.length' class='btn btn-danger' ng-click='click(myValue)'>Search Request</button>
 </div>
 
@@ -67,8 +66,8 @@
 <!-- repeat over my data: -->
 		<ul>
 			<li ng-repeat='new in newsArr'>
-				<h3><a ng-href=" {{ new.web_url }} ">{{ new.headline.main }}</a></h3>
-				<iframe id='preview'></iframe>
+				<h3><a ng-href="{{ new.web_url }}">{{ new.headline.main }}</a></h3>
+				<textarea class="form-control" id='preview'>{{new.snippet}}</textarea>
 				<h4>{{ new.snippet }}</h4>
 				<br />
 			</li>
